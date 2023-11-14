@@ -27,13 +27,8 @@
 }
 
 body{
-  /* background-image: url(./assets/bg-mobile.jpg) ;
-  background-repeat: no-repeat ;
-  background-position: top center;
-  background-size: cover; */
-
-  /* background: color image repeat position/size */
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100%;
 }
 body *{
   font-family: 'Inter', sans-serif;
@@ -161,3 +156,14 @@ footer{
   text-align: center;
   font-size: 14px;
 }
+
+ /* media queries */
+ @media (min-width: 700px){
+  :root{
+    --bg-url: url(./assests/bg-desktop.jpg);
+  }
+  
+  .light{
+    --bg-url: url(./assests/bg-desktop-light.jpg)
+  }
+ }
